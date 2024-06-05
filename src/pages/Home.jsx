@@ -1,16 +1,18 @@
-import { Box, Container, Heading, Text, VStack, Image, Flex, Link } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, VStack, Image, Flex, Link, Button } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <Container maxW="container.xl" py={4}>
-      <Box bg="gray.200" p={4} mb={4} textAlign="center">
+      <Box bg="gray.800" color="white" p={4} mb={4} textAlign="center">
         <Text fontSize="lg">Keep reading the FT for free</Text>
         <Link href="#" color="teal.500" fontWeight="bold">
           Register now and enjoy any 3 articles for free every month.
         </Link>
+        <Button colorScheme="teal" ml={4}>REGISTER FOR FREE</Button>
       </Box>
       <Flex>
         <Box flex="2" p={4}>
+          <Text fontSize="sm" color="red.500" mb={2}>ESG investing</Text>
           <Heading as="h2" size="xl" mb={4}>
             Investors pull cash from ESG funds as performance lags
           </Heading>
@@ -27,6 +29,7 @@ const Home = () => {
       </Flex>
       <Flex>
         <Box flex="2" p={4}>
+          <Text fontSize="sm" color="purple.500" mb={2}>Electric vehicles</Text>
           <Heading as="h2" size="xl" mb={4}>
             The Big Read: China’s plan to sell cheap EVs to the rest of the world
           </Heading>
